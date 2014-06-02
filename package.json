@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JoeStanton/learn-swift/issues"
   },
-  "homepage": "https://github.com/JoeStanton/learn-swift"
+  "homepage": "https://github.com/JoeStanton/learn-swift",
+  "dependencies": {
+    "express": "^4.4.0"
+  }
 }
