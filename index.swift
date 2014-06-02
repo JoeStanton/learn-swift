@@ -23,7 +23,7 @@ var x = 0.0, y = 0.0
 
 // Function definitions, using the func keyword.
 
-func sayHello(firstName : String, lastName: : String) {
+func sayHello(firstName : String, lastName : String) {
   if(firstName == lastName) {
     println("That's funny!")
   } else {
