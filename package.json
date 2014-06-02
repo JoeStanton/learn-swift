@@ -1,0 +1,20 @@
+{
+  "name": "learn-swift",
+  "version": "0.0.1",
+  "description": "Learn the Swift Programming Language",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JoeStanton/learn-swift.git"
+  },
+  "author": "Joe Stanton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeStanton/learn-swift/issues"
+  },
+  "homepage": "https://github.com/JoeStanton/learn-swift"
+}
