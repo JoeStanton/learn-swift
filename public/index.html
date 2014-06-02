@@ -94,7 +94,7 @@ canChange = <span class="hljs-keyword">true</span></pre></div></div>
 
             </div>
             
-            <div class="content"><div class='highlight'><pre>var String: canChange</pre></div></div>
+            <div class="content"><div class='highlight'><pre>var Bool: canChange</pre></div></div>
             
         </li>
         
@@ -110,6 +110,45 @@ canChange = <span class="hljs-keyword">true</span></pre></div></div>
             </div>
             
             <div class="content"><div class='highlight'><pre>var x = <span class="hljs-number">0.0</span>, y = <span class="hljs-number">0.0</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>Function definitions, using the func keyword.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+func sayHello(firstName : String, lastName: : String) {
+  <span class="hljs-keyword">if</span>(firstName == lastName) {
+    println(<span class="hljs-string">"That's funny!"</span>)
+  } <span class="hljs-keyword">else</span> {
+    println(<span class="hljs-string">"Hello, \(firstName) \(lastName)"</span>)
+  }
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>Closures, accepted after the closing parenthesis to a function, similar to Ruby - Delimited by braces, of course</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+let names = [<span class="hljs-string">"bob"</span>, <span class="hljs-string">"bill"</span>, <span class="hljs-string">"gregg"</span>]
+var sorted = sort (names) { $<span class="hljs-number">0</span> &lt; $<span class="hljs-number">1</span> }</pre></div></div>
             
         </li>
         
