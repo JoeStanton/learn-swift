@@ -1,4 +1,4 @@
-// Method Calls - C Style
+// Method Calls - C Style, no semicolons
 
 println("Hello World")
 
@@ -16,18 +16,23 @@ var canChange = false
 canChange = true
 
 // Optional Type Annotations
-var Bool: canChange
+let dog: Character = "🐶"
 
 // Define multiple constants/variables on one line
 var x = 0.0, y = 0.0
 
+// Delimit numbers for readibility
+let oneMillion = 1_000_000
+
 // Function definitions, using the func keyword.
 
 func sayHello(firstName : String, lastName : String) {
-  if(firstName == lastName) {
+  // Brace free conditionals
+  if firstName == lastName {
     println("That's funny!")
   } else {
-    println("Hello, \(firstName) \(lastName)")
+    // String Interpolation
+    println("Hello, \(firstName) \(lastName). ")
   }
 }
 
@@ -35,3 +40,35 @@ func sayHello(firstName : String, lastName : String) {
 
 let names = ["bob", "bill", "gregg"]
 var sorted = sort (names) { $0 < $1 }
+
+
+//Type System
+
+// Optional Types
+// Somewhat related to the "Maybe" monad style in functional languages like Haskell
+
+let possibleNumber = "123"
+let convertedNumber = possibleNumber.toInt()
+
+if convertedNumber { println(convertedNumber!) } // Use the bang method to "force unwrap"
+
+//Conversion
+let anInteger = Int("1")
+
+// Mixed-Type Tuples
+let http404Error = (404, "Not Found")
+
+// Ranges (inclusive and exclusive)
+(1..10)
+(1...10)
+
+// Decomposition
+let (statusCode, statusMessage) = http404Error
+
+//Aliasing
+typealias AudioSample = UInt16
+
+// Misc Improvements over C
+
+if var1 = 2 {} // Assignments do not return a value, eliminating this common class of bug when the = operator is used instead of ==
+let sample = veryLargeNumber * 2 // Arithmetic overflow is detected and disallowed

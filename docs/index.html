@@ -8,5 +8,322 @@
   <link rel="stylesheet" media="all" href="docco.css" />
 </head>
 <body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>index.swift</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              <p>Method Calls - C Style, no semicolons</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+println(<span class="hljs-string">"Hello World"</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>Constants (immutable) defined with let</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+let boolVariable = <span class="hljs-keyword">false</span>
+let maximumAttempts = <span class="hljs-number">10</span>
+let currentTemperature = <span class="hljs-number">18.57</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p>Unicode identifiers</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>let π = <span class="hljs-number">3.14159</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>Variables defined with “var”</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>var canChange = <span class="hljs-keyword">false</span>
+canChange = <span class="hljs-keyword">true</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <p>Optional Type Annotations</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>let dog: Character = <span class="hljs-string">"🐶"</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>Define multiple constants/variables on one line</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>var x = <span class="hljs-number">0.0</span>, y = <span class="hljs-number">0.0</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <p>Delimit numbers for readibility</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>let oneMillion = <span class="hljs-number">1</span>_000_000</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>Function definitions, using the func keyword.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+func sayHello(firstName : String, lastName : String) {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>Brace free conditionals</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>  <span class="hljs-keyword">if</span> firstName == lastName {
+    println(<span class="hljs-string">"That's funny!"</span>)
+  } <span class="hljs-keyword">else</span> {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <p>String Interpolation</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>    println(<span class="hljs-string">"Hello, \(firstName) \(lastName). "</span>)
+  }
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>Closures, accepted after the closing parenthesis to a function, similar to Ruby - Delimited by braces, of course</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+let names = [<span class="hljs-string">"bob"</span>, <span class="hljs-string">"bill"</span>, <span class="hljs-string">"gregg"</span>]
+var sorted = sort (names) { $<span class="hljs-number">0</span> &lt; $<span class="hljs-number">1</span> }</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <p>Type System</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>Optional Types
+Somewhat related to the “Maybe” monad style in functional languages like Haskell</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+let possibleNumber = <span class="hljs-string">"123"</span>
+let convertedNumber = possibleNumber.toInt()
+
+<span class="hljs-keyword">if</span> convertedNumber { println(convertedNumber!) } <span class="hljs-comment">// Use the bang method to "force unwrap"</span></pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <p>Conversion</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>let anInteger = Int(<span class="hljs-string">"1"</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <p>Mixed-Type Tuples</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>let http404Error = (<span class="hljs-number">404</span>, <span class="hljs-string">"Not Found"</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <p>Ranges (inclusive and exclusive)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>(<span class="hljs-number">1.</span><span class="hljs-number">.10</span>)
+(<span class="hljs-number">1.</span>.<span class="hljs-number">.10</span>)</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>Decomposition</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>let (statusCode, statusMessage) = http404Error</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <p>Aliasing</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>typealias AudioSample = UInt16</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-19">&#182;</a>
+              </div>
+              <p>Misc Improvements over C</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+<span class="hljs-keyword">if</span> var1 = <span class="hljs-number">2</span> {} <span class="hljs-comment">// Assignments do not return a value, eliminating this common class of bug when the = operator is used instead of ==</span>
+let sample = veryLargeNumber * <span class="hljs-number">2</span> <span class="hljs-comment">// Arithmetic overflow is detected and disallowed</span></pre></div></div>
+            
+        </li>
+        
+    </ul>
+  </div>
 </body>
 </html>
